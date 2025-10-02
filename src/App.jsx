@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import TaskForm from './components/TaskForm'
 import Header from './components/Header'
+import Main from './components/Main'
 
 function App () {
   const [count, setCount] = useState(0)
@@ -11,8 +12,8 @@ function App () {
   return (
     <>
       <Header/>
-      <main></main>
-      <TaskForm />
+      <Main/>
+      <footer></footer>
     </>
   );
 };

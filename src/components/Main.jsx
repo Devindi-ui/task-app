@@ -1,4 +1,5 @@
 import TaskForm from "./TaskForm";
+import TaskList from "./TaskList";
 import { useState } from "react";
 import { taskAPI } from "../services/api";
 
@@ -37,6 +38,10 @@ const Main = () => {
                         onSubmit={editing ? updateTask : addTask}
                         onCancel={editing ? () => setEditing(null) : undefined}
                     />
+                </section>
+
+                <section>
+                    <TaskList/>
                 </section>
         </main>
     );

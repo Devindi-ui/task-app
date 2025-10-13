@@ -23,7 +23,9 @@ const taskAPI = {
     createTask:(taskData) => request('/tasks/create', {
         method: 'POST',
         body:JSON.stringify(taskData)
-    })
+    }),
+
+    getAllTasks:() => request('/tasks/all', {method:'GET'})
 };
 
 export {taskAPI};
